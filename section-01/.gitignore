@@ -1,4 +1,4 @@
-/target/
+/openai/target/
 /.idea/
 /.vscode/
 /*.iml
