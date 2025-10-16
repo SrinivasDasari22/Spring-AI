@@ -3,5 +3,5 @@ section-01/openai/*.iml
 /.idea/
 /.vscode/
 /*.iml
-*.log
 /target/
+*.log
