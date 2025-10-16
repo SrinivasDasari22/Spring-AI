@@ -1,4 +1,5 @@
-section-01/openai/target/
+section-01/openai/target
+section-01/openai/*.iml
 /.idea/
 /.vscode/
 /*.iml
