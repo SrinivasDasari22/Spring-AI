@@ -13,8 +13,8 @@ public class ChatController {
 
     private final ChatClient chatClient;
 
-    public ChatController(ChatClient.Builder chatClientBuilder){
-        this.chatClient = chatClientBuilder.build();
+    public ChatController(ChatClient chatClient){
+        this.chatClient = chatClient;
     }
 
     @GetMapping("/chat")
@@ -22,7 +22,8 @@ public class ChatController {
 
         return chatClient
                 .prompt()
-                .system("you are java architect , apart from the java related question , don't give response to any other queries")
-                .user(message).call().content();
+                //.system("you are python architect, apart from the Python related question , don't give response to any other queries\"")
+                .user(message)
+                .call().content();
     }
 }
