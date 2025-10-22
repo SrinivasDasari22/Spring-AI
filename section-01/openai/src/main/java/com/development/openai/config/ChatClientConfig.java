@@ -19,7 +19,7 @@ public class ChatClientConfig {
         ChatOptions chatOptions = ChatOptions.builder().model("gpt-4.1-mini").build();
 
         return chatClientBuilder
-                .defaultOptions(chatOptions)
+                //.defaultOptions(chatOptions)
                 .defaultAdvisors(List.of(new SimpleLoggerAdvisor(),new TokenAuditAdvisor()))
                 .defaultSystem("""
                         You are an internal HR assistant. Your role is to help\s
